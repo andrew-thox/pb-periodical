@@ -5,7 +5,11 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [im.chit/cronj "1.4.1"]
-                 [environ "0.5.0"]]
+                 [environ "0.5.0"]
+                 ;logging
+                 [org.clojure/tools.logging "0.3.1"]
+                 [ch.qos.logback/logback-classic "1.1.3"]
+                 [me.moocar/logback-gelf "0.12"]]
   :plugins [[lein-environ "1.0.1"]]
   :main ^:skip-aot periodical.core
   :target-path "target/%s"

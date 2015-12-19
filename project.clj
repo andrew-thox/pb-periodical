@@ -4,7 +4,9 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.7.0"]
-                 [im.chit/cronj "1.4.1"]]
+                 [im.chit/cronj "1.4.1"]
+                 [environ "0.5.0"]]
+  :plugins [[lein-environ "1.0.1"]]
   :main ^:skip-aot periodical.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})

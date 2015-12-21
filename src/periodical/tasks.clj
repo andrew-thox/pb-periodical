@@ -2,9 +2,9 @@
   (:require [periodical.handlers :as handlers]
             [environ.core :refer [env]]))
 
-(def print-task
-  {:id "print-task"
-   :handler handlers/print-handler
+(def acquistion-task
+  {:id "new-statesman-rss-reader"
+   :handler handlers/acquistion-handler
    ;:schedule "0 /15 * * * * *"
-   :schedule "/2 * * * * * *"
+   :schedule "/30 * * * * * *"
    :opts {:publication "new-statesman" :type "rss-feed"}})

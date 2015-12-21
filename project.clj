@@ -6,6 +6,7 @@
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [im.chit/cronj "1.4.1"]
                  [environ "0.5.0"]
+                 [clj-http "2.0.0"]
                  ;logging
                  [org.clojure/tools.logging "0.3.1"]
                  [ch.qos.logback/logback-classic "1.1.3"]

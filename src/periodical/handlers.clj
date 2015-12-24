@@ -7,5 +7,5 @@
 
 (defn acquistion-handler [t opts]
   (let [url (clojure.string/replace acquistion-url #":publication|:type" {":publication" (:publication opts) ":type" (:type opts)})]
-    (log/info t "-" url)
+    (log/info t "- checking " url " for new articles")
     (client/get url)))

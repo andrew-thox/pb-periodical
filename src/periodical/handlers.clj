@@ -9,4 +9,4 @@
   (let [url (clojure.string/replace acquistion-url #":publication|:type" {":publication" (:publication opts) ":type" (:type opts)})]
     (log/info t "- checking " url " for new articles")
     (client/get url)
-    (client/get "https://hchk.io/42d1786e-c01e-4dcb-ba1c-7a328b99a031")))
+    (client/get "http://hchk.io/42d1786e-c01e-4dcb-ba1c-7a328b99a031")))

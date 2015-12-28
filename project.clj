@@ -10,7 +10,11 @@
                  ;logging
                  [org.clojure/tools.logging "0.3.1"]
                  [ch.qos.logback/logback-classic "1.1.3"]
-                 [me.moocar/logback-gelf "0.12"]]
+                 [me.moocar/logback-gelf "0.12"]
+                 ;avro
+                 [com.damballa/abracad "0.4.13"]
+                 ;queue
+                 [com.novemberain/langohr "3.0.0-rc2"]]
   :plugins [[lein-environ "1.0.1"]]
   :main ^:skip-aot periodical.core
   :target-path "target/%s"

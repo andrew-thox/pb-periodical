@@ -7,4 +7,4 @@
    :handler handlers/acquistion-handler
    :schedule "0 /15 * * * * *"
    ;:schedule "/30 * * * * * *"
-   :opts {:publication "new-statesman" :type "rss-feed"}})
+   :opts {:publication "new-statesman" :method "rss-feed"}})
